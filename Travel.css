@@ -1,0 +1,430 @@
+/****Navbar***/
+.navbar .navbar-nav{
+ color: white;
+ font-size: 22px;
+}
+
+.navbar .navbar-brand{
+    color: rgb(255, 253, 253);
+    font-size: 50px;
+}
+
+.navbar .nav-link{
+    color: white;
+}
+
+
+.navbar .navbar-nav .nav-item {
+    margin-right: 24px;
+    font-size: 20px;
+    margin-left: 31px;
+  }
+  
+
+/****Banner styling***/
+
+.banner-image{
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    background-size: cover;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(TR-photos/V-banner.jpg)
+}
+.banner-image .main-text{
+    font-size: 57px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.banner-image .icon-container {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+  }
+
+  /****Icons at banner botton left***/
+  .icon-container i {
+    font-size: 22px;
+    margin-left: 20px;
+    margin-right: 10px;
+    padding-left: 9px;
+  }
+
+ 
+ /*****Tours section**/
+ .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.header {
+  flex: 1;
+  font-size: 95px;
+}
+
+.paragraph {
+  flex: 3;
+ 
+}
+
+.slider {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+.slider-items {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+.slider-item {
+  flex: 0 0 33.33%;
+  padding: 0 20px;
+  text-align: center;
+  margin-top: 75px;
+  margin-right: 5px;
+}
+.slider-item img {
+ width: 350px;
+ height: 250px;
+}
+.slider-item h1 {
+  margin-top: 20px;
+  position: fit-content;
+}
+.slider-arrow {
+  position: absolute;
+  text-decoration: none;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: #fff;
+  background-color: rgba(0,0,0,0.5);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.slider-arrow:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.slider-arrow-left {
+  left: 20px;
+}
+.slider-arrow-right {
+  right: 20px;
+}
+ 
+
+/*****Destination container starts here***/
+.card {
+  width: 500px;
+  height: 300px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; /* Evenly spaces out children horizontally */
+  align-items: center; /* Centers vertically */
+}
+
+/*******Destination container with text, button and img********/
+.Big-card {
+  margin: 0 auto;
+  max-width: 1200px; /* Adjust as needed */
+  padding: 20px;
+}
+
+.card-content {
+  position: relative;
+}
+
+.card-content img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+.content-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+/* Default styles for the H2 heading and button */
+.Big-card h2 {
+  font-size: 105px;
+  margin-bottom: 50px;
+}
+
+.Big-card button {
+  font-size: 24px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .Big-card h2 {
+    font-size: 38px; /* Adjust the font size as per your preference for small screens */
+    margin-bottom: 30px; /* Adjust the margin as per your preference for small screens */
+  }
+
+  .Big-card button {
+    font-size: 18px; /* Adjust the font size as per your preference for small screens */
+  }
+}
+
+/* Overlay styles */
+.Big-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden; /* Ensure the gradient doesn't overflow outside the container */
+}
+
+.Big-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  /* Apply the brightness filter to darken the image */
+  filter: brightness(70%); /* You can adjust the value from 0% to 100% for desired darkness */
+}
+
+.Big-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/*****Destination container Ends here***/
+
+/****About section starts here******/
+#About{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.About-content{
+ font-size: 26px;
+}
+
+.About-image img{
+  width: 90%;
+  height: auto;
+  border-radius: 30px;
+}
+#About .container h2{
+  font-size: 105px;
+}
+
+/****About section Ends here******/
+
+/********packages section starts here***********/
+ 
+.card-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.Packages-header{
+  font-size: 105px;
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  width: 400px; /* Set the desired width for each card */
+  padding: 0px;
+  height: 550px;
+  position: relative; /* Set the card container as a relative parent */
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  filter: brightness(70%);
+  border-radius: 24px;
+}
+
+/***h1s for the packages***/
+.Heading-1{
+  position: absolute; /* Position the heading on top of the image */
+  top: 10%; /* Adjust the top position to vertically center the heading */
+  left: 59%; /* Adjust the left position to horizontally center the heading */
+  font-size:  55px;
+  margin: 0; /* Remove default margins */
+  padding: 10px; /* Add some padding for better readability */
+  color: #f2f2f2;
+}
+
+.Heading-2{
+  position: absolute; /* Position the heading on top of the image */
+  top: 65%; /* Adjust the top position to vertically center the heading */
+  bottom: 40%; /* Adjust the bottom position to place the button at the desired distance from the bottom */
+  left: 57%; /* Adjust the left position to horizontally center the button */
+  font-size:  55px;
+  color: #f2f2f2;
+}
+
+.Heading-3{
+  position: absolute; /* Position the heading on top of the image */
+  top: 10%; /* Adjust the top position to vertically center the heading */
+  left: 52%; /* Adjust the left position to horizontally center the heading */
+  font-size:  55px;
+  margin: 0; /* Remove default margins */
+  padding: 10px; /* Add some padding for better readability */
+  color: #f2f2f2;
+}
+
+
+/***Button for the packages***/
+.button-1{
+  position: absolute;
+  left: 50%; 
+  transform: translateX(-50%); /* Move the button to center */
+  background-color:  #1c23ef;
+  color: #fff; /* Set text color for the button */
+  border: none; /* Remove button border */
+  bottom: 20px; /* Adjust the bottom position to place the button at the desired distance from the bottom */
+  left: 50%; /* Adjust the left position to horizontally center the button */
+  padding: 8px 16px; /* Add padding to the button */
+  cursor: pointer; /* Add a cursor pointer on hover */
+  border-radius: 12px;
+  width: 200px;
+}
+
+.button-2{
+  position: absolute;
+  transform: translateX(-50%); /* Move the button to center */
+  background-color: #ef661c;
+  color: #fff; /* Set text color for the button */
+  border: none; /* Remove button border */
+  bottom: 85%; /* Adjust the bottom position to place the button at the desired distance from the bottom */
+  left: 50%; /* Adjust the left position to horizontally center the button */
+  padding: 8px 16px; /* Add padding to the button */
+  cursor: pointer; /* Add a cursor pointer on hover */
+  border-radius: 12px;
+  width: 200px;
+}
+
+.button-3{
+  position: absolute;
+  left: 50%; 
+  transform: translateX(-50%); /* Move the button to center */
+  background-color:  #1c23ef;
+  color: #fff; /* Set text color for the button */
+  border: none; /* Remove button border */
+  bottom: 20px; /* Adjust the bottom position to place the button at the desired distance from the bottom */
+  left: 50%; /* Adjust the left position to horizontally center the button */
+  padding: 8px 16px; /* Add padding to the button */
+  cursor: pointer; /* Add a cursor pointer on hover */
+  border-radius: 12px;
+  width: 200px;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-wrap: wrap; /* Change flex-wrap to wrap on smaller screens */
+    justify-content: center; /* Center the cards vertically on smaller screens */
+    gap: 20px; /* Increase the gap between cards on smaller screens */
+  }
+
+  .card {
+    width: 100%; /* Set the card width to 100% on smaller screens */
+    height: auto; /* Set the card height to auto to maintain aspect ratio */
+  }
+
+  /* Adjust the heading and button positions on smaller screens */
+  .Heading-1, .Heading-2, .Heading-3 {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
+
+
+
+/********packages section ends here************/
+
+/* Media query for about section to reduce h2 size for small screens */
+@media screen and (max-width: 480px) {
+  #About .container h2 {
+    font-size: 60px;
+  }
+}
+
+
+
+/**** main Button style start***********/
+.card-content .content-overlay button.main-button {
+  width: 300px;
+  height: 70px;
+  background: transparent;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 21px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+}
+
+/* Reduce button size for smaller screens */
+@media screen and (max-width: 480px) {
+  .card-content .content-overlay button.main-button {
+    width: 200px;
+    height: 50px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+/**** main Button style end***********/
+
+
+
+
+ /*****Media query for tours****/
+ @media (max-width: 600px) {
+  .Tours-container .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Tours-container .container .header {
+    order: 1;
+  }
+
+  .Tours-container .container .paragraph {
+    order: 2;
+    padding-top: 3;
+  }
+}
+
+
+
+
+/*****media query****/
+@media only screen and (max-width:600px){
+    .banner-image{
+     background-position: 20% 33%;
+  }    
+}
+/******media query for nav****/
+@media (min-width: 750px) {
+    .nav-item {
+      margin-right: 49px;
+    }
+  }
+  
